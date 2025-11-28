@@ -6,19 +6,15 @@
     "types": ["jest", "node"],
     "noUnusedLocals": false
   },
-  "files": ["src/test-setup.ts"],
+  "files": ["test-setup.ts"],
   "include": [
     "jest.config.ts",
     "jest.config.cts",
-    "src/**/*.test.ts",
-    "src/**/*.spec.ts",
-    "src/**/*.test.tsx",
-    "src/**/*.spec.tsx",
-    "src/**/*.test.js",
-    "src/**/*.spec.js",
-    "src/**/*.test.jsx",
-    "src/**/*.spec.jsx",
-    "src/**/*.d.ts",
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "**/*.test.tsx",
+    "**/*.spec.tsx",
+    "**/*.d.ts",
     "jest.resolver.js"
   ],
   "references": [

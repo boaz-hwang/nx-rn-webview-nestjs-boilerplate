@@ -1,24 +1,36 @@
 {
   "name": "@robopet-service/mobile",
   "version": "0.0.1",
+  "main": "expo-router/entry",
   "private": true,
   "scripts": {
-    "eas-build-post-install": "cd ../../ && node tools/scripts/eas-build-post-install.mjs . apps/mobile"
+    "eas-build-post-install": "cd ../../ && node tools/scripts/eas-build-post-install.mjs . apps/mobile",
+    "android": "expo prebuild --clean && expo run:android",
+    "ios": "expo run:ios"
   },
   "dependencies": {
-    "@expo/metro-config": "*",
-    "@testing-library/react-native": "*",
-    "expo": "*",
-    "expo-splash-screen": "*",
-    "expo-status-bar": "*",
-    "expo-system-ui": "*",
-    "jest-expo": "*",
-    "metro-config": "*",
-    "metro-resolver": "*",
-    "react": "*",
-    "react-native": "*",
-    "react-native-svg": "*",
-    "react-native-svg-transformer": "*",
-    "react-native-web": "*"
+    "@expo/metro-config": "~0.20.14",
+    "@expo/vector-icons": "^14.1.0",
+    "@react-navigation/native": "^7.1.22",
+    "@testing-library/react-native": "~13.2.0",
+    "expo": "~53.0.10",
+    "expo-constants": "~17.1.7",
+    "expo-font": "~13.3.2",
+    "expo-linking": "~7.1.7",
+    "expo-router": "~5.1.7",
+    "expo-splash-screen": "~0.30.9",
+    "expo-status-bar": "~2.2.3",
+    "expo-system-ui": "~5.0.8",
+    "expo-web-browser": "~14.2.0",
+    "jest-expo": "~53.0.7",
+    "metro-config": "~0.82.4",
+    "metro-resolver": "~0.82.4",
+    "react": "~19.0.0",
+    "react-native": "0.79.6",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-screens": "~4.11.1",
+    "react-native-svg": "~15.11.2",
+    "react-native-svg-transformer": "~1.5.1",
+    "react-native-web": "~0.20.0"
   }
 }
