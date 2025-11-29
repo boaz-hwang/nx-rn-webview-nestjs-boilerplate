@@ -3,6 +3,11 @@ import { Platform, StyleSheet } from 'react-native';
 
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
+import {
+  STYLE_ALIGN,
+  STYLE_FONT_WEIGHTS,
+  STYLE_WIDTHS,
+} from '../constants/Styles';
 
 export default function ModalScreen() {
   return (
@@ -24,16 +29,16 @@ export default function ModalScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: STYLE_ALIGN.center,
+    justifyContent: STYLE_ALIGN.center,
   },
   title: {
     fontSize: 20,
-    fontWeight: 'bold',
+    fontWeight: STYLE_FONT_WEIGHTS.bold,
   },
   separator: {
     marginVertical: 30,
     height: 1,
-    width: '80%',
+    width: STYLE_WIDTHS.eightyPercent,
   },
 });

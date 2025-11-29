@@ -2,6 +2,11 @@ import { Link, Stack } from 'expo-router';
 import { StyleSheet } from 'react-native';
 
 import { Text, View } from '../components/Themed';
+import {
+  STYLE_ALIGN,
+  STYLE_COLORS,
+  STYLE_FONT_WEIGHTS,
+} from '../constants/Styles';
 
 export default function NotFoundScreen() {
   return (
@@ -21,13 +26,13 @@ export default function NotFoundScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: STYLE_ALIGN.center,
+    justifyContent: STYLE_ALIGN.center,
     padding: 20,
   },
   title: {
     fontSize: 20,
-    fontWeight: 'bold',
+    fontWeight: STYLE_FONT_WEIGHTS.bold,
   },
   link: {
     marginTop: 15,
@@ -35,6 +40,6 @@ const styles = StyleSheet.create({
   },
   linkText: {
     fontSize: 14,
-    color: '#2e78b7',
+    color: STYLE_COLORS.linkBlue,
   },
 });

@@ -1,31 +1,15 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
+import { screenStyles } from '../../../../constants/Styles';
+
 export default function DeviceAlertsScreen() {
   return (
-    <View style={containerStyle}>
-      <Text style={titleStyle}>Device Alerts</Text>
-      <Text style={bodyStyle}>WebView placeholder for device alerts list.</Text>
+    <View style={screenStyles.paddedContainer}>
+      <Text style={screenStyles.title}>Device Alerts</Text>
+      <Text style={screenStyles.body}>
+        WebView placeholder for device alerts list.
+      </Text>
     </View>
   );
 }
-
-const containerStyle = {
-  flex: 1,
-  backgroundColor: '#0F172A',
-  padding: 24,
-  justifyContent: 'center',
-};
-
-const titleStyle = {
-  fontSize: 24,
-  fontWeight: '700' as const,
-  color: '#E2E8F0',
-  marginBottom: 8,
-};
-
-const bodyStyle = {
-  fontSize: 14,
-  color: '#CBD5E1',
-  lineHeight: 20,
-};
