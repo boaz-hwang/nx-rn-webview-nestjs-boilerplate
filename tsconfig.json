@@ -8,6 +8,18 @@
     },
     {
       "path": "./apps/mobile"
+    },
+    {
+      "path": "./apps/server-e2e"
+    },
+    {
+      "path": "./apps/server"
+    },
+    {
+      "path": "./apps/webview-e2e"
+    },
+    {
+      "path": "./apps/webview"
     }
   ]
 }
